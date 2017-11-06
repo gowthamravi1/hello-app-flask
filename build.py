@@ -20,6 +20,7 @@ def set_properties(project):
     project.set_property("dir_source_unittest_python", "src/unittest/python/helloapp")
     project.depends_on('flask')
     project.set_property('coverage_break_build', True)
+    project.set_property('teamcity_output', True)
     project.set_property('flake8_break_build', True)
     project.set_property('flake8_verbose_output', True)
     
