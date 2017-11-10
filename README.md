@@ -40,8 +40,11 @@ pyb
 
 After installation you can run the application in debug mode using
 ```bash
-./run_server
+python run.py
 ```
+
+# How to run in production
+Working on it...
 
 # License
 
