@@ -46,6 +46,10 @@ python run.py
 # How to run in production
 Working on it...
 
+# CICD Setup/ Jenkins
+Working on it...
+
+
 # License
 
 Licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
