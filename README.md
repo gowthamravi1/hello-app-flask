@@ -47,8 +47,10 @@ python run.py
 Working on it...
 
 # CICD Setup/ Jenkins
-Working on it...
-
+1) Download the Jenkins data file (https://drive.google.com/open?id=17j-Y5z3g0T-RYeQ2npWJftLNRtV_PVOr)
+2) Install Docker
+3) docker run -d -p 8080:8080 -p 50000:50000 -v /home/jipl27/docker-data/jenkins-data:/var/jenkins_home jenkins
+4) Jenkins login details (gowtham/gowtham)
 
 # License
 
