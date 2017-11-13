@@ -47,7 +47,11 @@ python src/main/python/com/jeavio/start_system_analyzer.py
 Working on it...
 
 # How to run in docker
-Working on it...
+1) pyb
+2) docker build -t hello-app .
+3) docker run --name mysql -p 3307:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7
+4) login to container and create database system_analyzer
+5) docker run --link mysql:mysql --name hello-app -p 5000:5000 -e DB_HOST=mysql -e DB_USER=root -e DB_PASSWORD=root -e DB_PORT=3306 hello-app
 
 # CICD Setup (Jenkins)
 1) Download the Jenkins data file (https://drive.google.com/a/jeavio.com/file/d/1YYrHg0pdAly0t66p5UP-ZP3qOnRmBBl_/view?usp=sharing)

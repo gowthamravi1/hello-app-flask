@@ -18,8 +18,6 @@ def set_properties(project):
     project.set_property("flake8_exclude_patterns", "setup.py,/target,htmlcov,devenv")
     project.set_property("dir_source_main_python", "src/main/python/")
     project.set_property("dir_source_unittest_python", "src/unittest/python/")
-    project.set_property("coverage_branch_threshold_warn", 80)
-    project.set_property("coverage_branch_partial_threshold_warn", 80)
     project.depends_on('flask')
     project.set_property('coverage_break_build', True)
     project.set_property('teamcity_output', True)

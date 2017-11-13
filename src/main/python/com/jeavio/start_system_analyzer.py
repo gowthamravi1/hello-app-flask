@@ -3,6 +3,9 @@ Created on 04-Nov-2017
 
 @author: karthikeyan
 '''
+import sys
+sys.path.append('src/main/python')
+
 from multiprocessing import Process
 from com.jeavio.collector.metrics_collector import MetricsCollector
 from com.jeavio.controller import reports_controller
