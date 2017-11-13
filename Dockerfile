@@ -12,4 +12,4 @@ RUN pip install pybuilder
 RUN pyb install_dependencies
 #RUN export PYTHONPATH="src/main/python"
 ENTRYPOINT ["python"]
-CMD ["src/main/python/com/jeavio/start_system_analyzer.py"]
+CMD ["src/main/scripts/start_system_analyzer"]
