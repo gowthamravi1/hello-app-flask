@@ -19,11 +19,13 @@ class ControllerTest(unittest.TestCase):
     
     @patch.object(ReportService, "get_all_cpu_report")
     def test_get_cpu_report(self, mock_cpu_report):
+        mock_cpu_report.return_value = {"component" : "CPU", "utilization" : 5.0, "time" : "2017-11-13 09:52:13.371590"}
         result = self.app.get('/report/cpu')
         self.assertEqual(result.status_code, 200)
     
     @patch.object(ReportService, "get_all_ram_report")
     def test_get_virtual_memory_report(self, mock_ram_report):
+        mock_ram_report.return_value = {"component" : "VirtualMemory", "utilization" : 5.0, "time" : "2017-11-13 09:52:13.371590"}
         result = self.app.get('/report/virtualmemory')
         self.assertEqual(result.status_code, 200)
     
