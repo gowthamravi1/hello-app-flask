@@ -11,13 +11,13 @@ Templates use [twitter bootstrap](http://twitter.github.com/bootstrap/) via [boo
 Python allows to develop in [virtual environments](http://pypi.python.org/pypi/virtualenv).
 
 ```bash
-virtualen ve
+virtualen deveve
 ```
 
 Activate the virtual environment
 
 ```bash
-source ve/bin/activate
+source deveve/bin/activate
 ```
 
 ## Install pybuilder
@@ -40,17 +40,29 @@ pyb
 
 After installation you can run the application in debug mode using
 ```bash
-python run.py
+python src/main/python/com/jeavio/start_system_analyzer.py
 ```
 
 # How to run in production
 Working on it...
 
-# CICD Setup/ Jenkins
-1) Download the Jenkins data file (https://drive.google.com/open?id=17j-Y5z3g0T-RYeQ2npWJftLNRtV_PVOr)
+# How to run in docker
+Working on it...
+
+# CICD Setup (Jenkins)
+1) Download the Jenkins data file (https://drive.google.com/open?id=1YYrHg0pdAly0t66p5UP-ZP3qOnRmBBl_)
 2) Install Docker
-3) docker run -d -p 8080:8080 -p 50000:50000 -v /home/jipl27/docker-data/jenkins-data:/var/jenkins_home jenkins
+3) docker run -d -p 8080:8080 -p 50000:50000 -v /home/jipl27/docker-data/jenkins-data:/var/jenkins_home gowthamravi/jenkins-python-2.7.13:1
 4) Jenkins login details (gowtham/gowtham)
+5) Start the Build, if the build is failure due to depenedencies do the following
+
+After Docker container is started, Insrtall the following depenedencies
+
+1)apt-get install patch
+2)apt-get install gcc
+3)apt-get install make
+4)apt-get install libmysqlclient-dev
+5) apt-get install libssl-dev
 
 # License
 
