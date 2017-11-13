@@ -58,10 +58,10 @@ Working on it...
 
 After Docker container is started, Insrtall the following depenedencies
 
-1)apt-get install patch
-2)apt-get install gcc
-3)apt-get install make
-4)apt-get install libmysqlclient-dev
+1) apt-get install patch
+2) apt-get install gcc
+3) apt-get install make
+4) apt-get install libmysqlclient-dev
 5) apt-get install libssl-dev
 
 # License
