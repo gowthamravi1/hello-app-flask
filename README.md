@@ -52,7 +52,7 @@ Working on it...
 # CICD Setup (Jenkins)
 1) Download the Jenkins data file (https://drive.google.com/a/jeavio.com/file/d/1YYrHg0pdAly0t66p5UP-ZP3qOnRmBBl_/view?usp=sharing)
 2) Install Docker
-3) docker run -d -p 8080:8080 -p 50000:50000 -v /home/jipl27/docker-data/jenkins-data:/var/jenkins_home gowthamravi/jenkins-python-2.7.13:1
+3) docker run -d -p 8080:8080 -p 50000:50000 -v your_jenkins_data_location:/var/jenkins_home gowthamravi/jenkins-python-2.7.13:1
 4) Jenkins login details (gowtham/gowtham)
 5) Start the Build, if the build is failure due to depenedencies do the following
 
