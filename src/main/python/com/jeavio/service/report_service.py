@@ -34,5 +34,5 @@ class ReportService(object):
         rep_data = ReportData()
         rs = self.session.query(ReportData).filter_by(_ReportData__component='VirtualMemory')
         for data in rs:
-            report_data_as_list.append(json.dumps(rep_data.make_dump(data)))
+            report_data_as_list.append(rep_data.make_dump(data))
         return report_data_as_list
