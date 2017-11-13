@@ -6,3 +6,4 @@
 .pydevproject
 __pycache__
 .settings
+*.pyc
