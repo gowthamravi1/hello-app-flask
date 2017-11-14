@@ -6,7 +6,7 @@ Created on 04-Nov-2017
 from multiprocessing import Process
 from com.jeavio.collector.metrics_collector import MetricsCollector
 from com.jeavio.controller import reports_controller
-from com.jeavio.dbutil.DBUtil import DBUtil
+from com.jeavio.dbutil.reports_dbutil import DBUtil
 from com.jeavio.entities import report_data
 # import all other scripts as well
 
@@ -22,6 +22,7 @@ def start_flask(*args):
 
 if __name__ == '__main__':
     dbutil = DBUtil()
+    dbutil.create_database()
     report_data.Base.metadata.create_all(dbutil.create_engine())
     p = Process(target=start_metric_collector, args=("Either so", ))
     p1 = Process(target=start_flask, args=("or so", ))
