@@ -24,7 +24,7 @@ def set_properties(project):
     project.set_property('flake8_break_build', True)
     project.set_property('flake8_verbose_output', True)
 
-    project.set_property("coverage_exceptions", ["com.jeavio.service.report_service", "com.jeavio.start_system_analyzer"])
+    project.set_property("coverage_exceptions", ["com.jeavio.service.report_service", "com.jeavio.dbutil.reports_dbutil", "com.jeavio.start_system_analyzer"])
     project.build_depends_on("mock")
     project.depends_on("mysqlclient")
     project.depends_on("MySQL-python")

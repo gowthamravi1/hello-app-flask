@@ -3,7 +3,7 @@ Created on 03-Nov-2017
 
 @author: karthikeyan
 '''
-from com.jeavio.dbutil.DBUtil import DBUtil
+from com.jeavio.dbutil.reports_dbutil import DBUtil
 from sqlalchemy.orm import sessionmaker
 from com.jeavio.entities.report_data import ReportData
 
